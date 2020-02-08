@@ -3,9 +3,13 @@ public class Vehicle {
 
     public static void main (String[]args){
         Car car = new Car();
+        Car car2 = new Car();
+
 
         car.setColor("blue");
         car.setMake("Ford");
+        car2.setColor("purple");
+        car2.setMake("Mazda");
 
 
         car.carStart();
@@ -33,7 +37,8 @@ private member variables
         a default constructor
         an overloaded constructor
         methods which return a string indicating each task the car is performing.
-        For example, the accelerate method will return a string that says "The car is accelerating" and the setSpeed(90) method will return a string that says "The Speed is 90 mph". The application will also contain getters and setters for each private member variable.
+        For example, the accelerate method will return a string that says "The car is accelerating" and the setSpeed(90)
+        method will return a string that says "The Speed is 90 mph". The application will also contain getters and setters for each private member variable.
 
         Create another class called CarApp which contains the main method. In the main method create an instance of a Car.
 
@@ -48,7 +53,9 @@ private member variables
 
         Be creative and make up your own methods if you like.
 
-        Create a second instance of the car once your first car is working. Set its private member variables in the main method. Now you can call the methods of the second car in between the calls to the methods of the first car. Your program will keep the two separate. Here's an example. Your mileage may vary.
+        Create a second instance of the car once your first car is working. Set its private member variables in the main method.
+        Now you can call the methods of the second car in between the calls to the methods of the first car.
+        Your program will keep the two separate. Here's an example. Your mileage may vary.
 
         The red Porsche is starting
         The blue Jetta is starting
