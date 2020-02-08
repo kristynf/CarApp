@@ -13,6 +13,10 @@ public class Car extends Vehicle {
         this.acceleration = acceleration;
     }
 
+
+
+
+
     public String getMake() {
         return make;
     }
@@ -38,20 +42,21 @@ public class Car extends Vehicle {
     }
 
     public void carStart(){
-        System.out.println("The car is starting.");
+        System.out.println("The " +color +" " +make+" is starting.");
     }
 
     public void accelerate() {
-        System.out.println("The car is accelerating.");
+        System.out.println("The " +color +" " +make+ " is accelerating.");
     }
 
     public String setSpeed(String acceleration) {
-        return "The Speed is: " + acceleration +" mph.";
+        return "The Speed of the " +color+" " +make+" is: " + acceleration +" mph.";
     }
 
     public void carStop(){
-        System.out.println("The car has stopped.");
+        System.out.println("The "+color+" " +make +" has stopped.");
     }
+
 
 }
 
