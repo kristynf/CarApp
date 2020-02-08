@@ -1,7 +1,16 @@
 public class Vehicle {
     public static void main (String[]args){
+        Car car = new Car();
+        car.carStart();
+        car.accelerate();
+        System.out.println(car.setSpeed("45"));
+        car.carStop();
 
     }
+
+
+
+
 }
 
 

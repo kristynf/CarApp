@@ -1,13 +1,16 @@
 public class Car extends Vehicle {
     private String make;
     private String color;
+    private String acceleration;
 
-    public Car(){
+    public Car() {
 
     }
-    public Car(String make,String color){
-        this.make=make;
-        this.color=color;
+
+    public Car(String make, String color, String acceleration) {
+        this.make = make;
+        this.color = color;
+        this.acceleration = acceleration;
     }
 
     public String getMake() {
@@ -24,6 +27,30 @@ public class Car extends Vehicle {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public String getAcceleration() {
+        return acceleration;
+    }
+
+    public void setAcceleration(String acceleration) {
+        this.acceleration = acceleration;
+    }
+
+    public void carStart(){
+        System.out.println("The car is starting.");
+    }
+
+    public void accelerate() {
+        System.out.println("The car is accelerating.");
+    }
+
+    public String setSpeed(String acceleration) {
+        return "The Speed is: " + acceleration +" mph.";
+    }
+
+    public void carStop(){
+        System.out.println("The car has stopped.");
     }
 
 }
